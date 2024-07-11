@@ -1,9 +1,9 @@
 D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Services.deps.json
 D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Services.dll
 D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Services.pdb
-D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Data.dll
+D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Domain.dll
 D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Infrastructure.dll
-D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Data.pdb
+D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Domain.pdb
 D:\Visual studio\School\School.Services\bin\Debug\net8.0\School.Infrastructure.pdb
 D:\Visual studio\School\School.Services\obj\Debug\net8.0\School.Services.csproj.AssemblyReference.cache
 D:\Visual studio\School\School.Services\obj\Debug\net8.0\School.Services.GeneratedMSBuildEditorConfig.editorconfig

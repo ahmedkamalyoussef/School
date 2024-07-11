@@ -1,5 +1,6 @@
+using School.Api;
+using School.Core;
 using School.Services.Extentions;
-
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -11,7 +12,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.ConfigureDbContext(builder.Configuration);
-
+builder.Services.ConfigureServices().AddCoreServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -24,6 +25,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseMiddleware<PerformanceMiddleware>();
+
 
 app.MapControllers();
 

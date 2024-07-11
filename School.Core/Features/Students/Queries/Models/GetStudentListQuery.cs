@@ -1,9 +1,9 @@
 ﻿using MediatR;
-using School.Data.Entities;
+using School.Core.Features.Students.Queries.Response;
 
 namespace School.Core.Features.Students.Queries.Models
 {
-    public class GetStudentListQuery:IRequest<List<Student>>
+    public class GetStudentListQuery:IRequest<List<GetStudentListResponse>>
     {
     }
 }

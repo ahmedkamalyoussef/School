@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using School.Infrastructure.Data;
 using School.Domain.IGenericRepository_IUOW;
+using System.Linq.Expressions;
 
 namespace School.Infrastructure.GenericRepository_UOW
 {
@@ -20,9 +21,15 @@ namespace School.Infrastructure.GenericRepository_UOW
         }
 
 
-        public IQueryable<T> GetTableNoTracking()
+        public IQueryable<T> GetTableNoTracking(List<Expression<Func<T, object>>> includes = null)
         {
-            return _dbContext.Set<T>().AsNoTracking().AsQueryable();
+            IQueryable<T> query = _dbContext.Set<T>().AsNoTracking().AsQueryable();
+
+            if (includes != null)
+                foreach (var include in includes)
+                    query = query.Include(include);
+
+            return query;
         }
 
 
@@ -76,10 +83,14 @@ namespace School.Infrastructure.GenericRepository_UOW
 
         }
 
-        public IQueryable<T> GetTableAsTracking()
+        public IQueryable<T> GetTableAsTracking(List<Expression<Func<T, object>>> includes = null)
         {
-            return _dbContext.Set<T>().AsQueryable();
+            IQueryable<T> query = _dbContext.Set<T>().AsQueryable();
+            if (includes != null)
+                foreach (var include in includes)
+                    query = query.Include(include);
 
+            return query;
         }
 
         public virtual async Task UpdateRangeAsync(ICollection<T> entities)

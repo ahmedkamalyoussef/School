@@ -11,7 +11,7 @@ namespace School.Services.Implementaions
 
         public async Task<List<Student>> GetStudentsAsync()
         {
-            return await _unitOfWork.Students.GetTableNoTracking().ToListAsync();
+            return await _unitOfWork.Students.GetTableNoTracking(includes: [s=>s.Department]).ToListAsync();
         }
     }
 }

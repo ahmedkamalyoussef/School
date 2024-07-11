@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "FhwDcFPlDbYwHC6oDMJmkwsdKjZ4h11EBcsF1WHhJ9t+0FAKpoYnqNN1s6l3cpb0DrzuJvww2nQWtyXBcvUx5A==",
+  "dgSpecHash": "hSBdcr4RpVdj8Bc6aTFc9w+U5vkXL9h7tBUg2NNX/gJUuiFcFxa0XmhnQ0KHAyKWZ8C4pMz0IfcnRSKbJRYz2Q==",
   "success": true,
   "projectFilePath": "D:\\Visual studio\\School\\School.Core\\School.Core.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ahmed\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",

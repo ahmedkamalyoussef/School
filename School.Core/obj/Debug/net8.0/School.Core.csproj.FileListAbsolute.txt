@@ -1,10 +1,10 @@
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Core.deps.json
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Core.dll
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Core.pdb
-D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Data.dll
+D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Domain.dll
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Infrastructure.dll
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Services.dll
-D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Data.pdb
+D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Domain.pdb
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Infrastructure.pdb
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Services.pdb
 D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.csproj.AssemblyReference.cache

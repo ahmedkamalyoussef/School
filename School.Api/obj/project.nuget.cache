@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "C3uJzxkuBYgA1Gw3OYYyXe2lyxVevspEy9sUD5cK2KFUWLyA2sj+UwzQwBPNXXXEEeqz3Byvy3ULRG+P7ZSMlQ==",
+  "dgSpecHash": "BaFH8EU5fHiNeO3M7S/u8hhJ5EDJhn0bMlsiyKZ7/aqUXNWy3eH6O5FMea6gZLrb1xvTbrzigBhvVjsAH0eXVQ==",
   "success": true,
   "projectFilePath": "D:\\Visual studio\\School\\School.Api\\School.Api.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\ahmed\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

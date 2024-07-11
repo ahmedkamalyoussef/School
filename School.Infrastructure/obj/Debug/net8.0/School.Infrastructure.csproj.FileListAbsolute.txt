@@ -2,6 +2,8 @@ D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastruc
 D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastructure.runtimeconfig.json
 D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastructure.dll
 D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Infrastructure.pdb
+D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Domain.dll
+D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Domain.pdb
 D:\Visual studio\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.csproj.AssemblyReference.cache
 D:\Visual studio\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
 D:\Visual studio\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.AssemblyInfoInputs.cache
@@ -14,5 +16,3 @@ D:\Visual studio\School\School.Infrastructure\obj\Debug\net8.0\refint\School.Inf
 D:\Visual studio\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.pdb
 D:\Visual studio\School\School.Infrastructure\obj\Debug\net8.0\School.Infrastructure.genruntimeconfig.cache
 D:\Visual studio\School\School.Infrastructure\obj\Debug\net8.0\ref\School.Infrastructure.dll
-D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Domain.dll
-D:\Visual studio\School\School.Infrastructure\bin\Debug\net8.0\School.Domain.pdb

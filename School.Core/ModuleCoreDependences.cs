@@ -8,6 +8,8 @@ namespace School.Core
         public static IServiceCollection AddCoreServices(this IServiceCollection services)
         {
             services.AddMediatR(cfg=>cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
+            services.AddAutoMapper(Assembly.GetExecutingAssembly());
+
             return services;
         }
     }
