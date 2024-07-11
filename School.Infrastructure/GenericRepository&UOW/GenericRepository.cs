@@ -16,7 +16,6 @@ namespace School.Infrastructure.GenericRepository_UOW
         #region methods
         public virtual async Task<T> GetByIdAsync(int id)
         {
-
             return await _dbContext.Set<T>().FindAsync(id);
         }
 
@@ -30,28 +29,21 @@ namespace School.Infrastructure.GenericRepository_UOW
         public virtual async Task AddRangeAsync(ICollection<T> entities)
         {
             await _dbContext.Set<T>().AddRangeAsync(entities);
-            await _dbContext.SaveChangesAsync();
-
         }
         public virtual async Task<T> AddAsync(T entity)
         {
             await _dbContext.Set<T>().AddAsync(entity);
-            await _dbContext.SaveChangesAsync();
-
             return entity;
         }
 
         public virtual async Task UpdateAsync(T entity)
         {
             _dbContext.Set<T>().Update(entity);
-            await _dbContext.SaveChangesAsync();
-
         }
 
         public virtual async Task DeleteAsync(T entity)
         {
             _dbContext.Set<T>().Remove(entity);
-            await _dbContext.SaveChangesAsync();
         }
         public virtual async Task DeleteRangeAsync(ICollection<T> entities)
         {
@@ -59,13 +51,9 @@ namespace School.Infrastructure.GenericRepository_UOW
             {
                 _dbContext.Entry(entity).State = EntityState.Deleted;
             }
-            await _dbContext.SaveChangesAsync();
         }
 
-        public async Task SaveChangesAsync()
-        {
-            await _dbContext.SaveChangesAsync();
-        }
+        
 
 
 

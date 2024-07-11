@@ -6,7 +6,6 @@ namespace School.Domain.IGenericRepository_IUOW
     {
         Task DeleteRangeAsync(ICollection<T> entities);
         Task<T> GetByIdAsync(int id);
-        Task SaveChangesAsync();
         IDbContextTransaction BeginTransaction();
         void Commit();
         void RollBack();
