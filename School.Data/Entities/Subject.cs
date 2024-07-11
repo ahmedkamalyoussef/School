@@ -14,7 +14,7 @@ namespace School.Data.Entities
         [StringLength(500)]
         public string SubjectName { get; set; }
         public DateTime Period { get; set; }
-        public virtual ICollection<StudentSubject> StudentsSubjects { get; set; }
-        public virtual ICollection<DepartmetSubject> DepartmetsSubjects { get; set; }
+        public ICollection<StudentSubject> StudentsSubjects { get; set; }
+        public ICollection<DepartmetSubject> DepartmetsSubjects { get; set; }
     }
 }

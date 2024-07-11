@@ -11,10 +11,10 @@ namespace School.Data.Entities
         public int SubID { get; set; }
 
         [ForeignKey("StudID")]
-        public virtual Student Student { get; set; }
+        public Student Student { get; set; }
 
         [ForeignKey("SubID")]
-        public virtual Subject Subject { get; set; }
+        public Subject Subject { get; set; }
 
     }
 }

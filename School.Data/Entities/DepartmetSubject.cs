@@ -11,9 +11,9 @@ namespace School.Data.Entities
         public int SubID { get; set; }
 
         [ForeignKey("DID")]
-        public virtual Department Department { get; set; }
+        public Department Department { get; set; }
 
         [ForeignKey("SubID")]
-        public virtual Subject Subjects { get; set; }
+        public Subject Subjects { get; set; }
     }
 }
