@@ -1,4 +1,5 @@
 ﻿using School.Data.Entities;
+using School.Domain.Consts;
 
 namespace School.Services.Abstracts
 {
@@ -6,5 +7,7 @@ namespace School.Services.Abstracts
     {
         Task<List<Student>> GetStudentsAsync();
         Task<Student> GetStudentByIdAsync(int id);
+
+        Task<ErrorType> AddStudentAsync(Student student);
     }
 }

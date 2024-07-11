@@ -7,6 +7,7 @@ namespace School.Core.Mapping.StudentMap
         {
             GetStudent();
             GetStudents();
+            AddStudent();
         }
     }
 }

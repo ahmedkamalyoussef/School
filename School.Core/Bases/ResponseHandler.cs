@@ -7,7 +7,7 @@
         {
 
         }
-        public Response<T> Deleted<T>()
+        public static Response<T> Deleted<T>()
         {
             return new Response<T>()
             {
@@ -16,7 +16,7 @@
                 Message = "Deleted Successfully"
             };
         }
-        public Response<T> Success<T>(T entity, object Meta = null)
+        public static Response<T> Success<T>(T entity, object Meta = null)
         {
             return new Response<T>()
             {
@@ -27,7 +27,7 @@
                 Meta = Meta
             };
         }
-        public Response<T> Unauthorized<T>()
+        public static Response<T> Unauthorized<T>()
         {
             return new Response<T>()
             {
@@ -36,27 +36,36 @@
                 Message = "UnAuthorized"
             };
         }
-        public Response<T> BadRequest<T>(string Message = null)
+        public static Response<T> BadRequest<T>(string Message = null)
         {
             return new Response<T>()
             {
                 StatusCode = System.Net.HttpStatusCode.BadRequest,
                 Succeeded = false,
-                Message = Message == null ? "Bad Request" : Message
+                Message = Message ?? "Bad Request"
             };
         }
 
-        public Response<T> NotFound<T>(string message = null)
+        public static Response<T> UnprocessableEntity<T>(string Message = null)
+        {
+            return new Response<T>()
+            {
+                StatusCode = System.Net.HttpStatusCode.UnprocessableEntity,
+                Succeeded = false,
+                Message = Message ?? "already exist"
+            };
+        }
+        public static Response<T> NotFound<T>(string message = null)
         {
             return new Response<T>()
             {
                 StatusCode = System.Net.HttpStatusCode.NotFound,
                 Succeeded = false,
-                Message = message == null ? "Not Found" : message
+                Message = message ?? "Not Found"
             };
         }
 
-        public Response<T> Created<T>(T entity, object Meta = null)
+        public static Response<T> Created<T>(T entity, object Meta = null)
         {
             return new Response<T>()
             {

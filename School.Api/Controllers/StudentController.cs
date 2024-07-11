@@ -1,10 +1,11 @@
 ﻿using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using School.Core.Features.Students.Commands.Models;
 using School.Core.Features.Students.Queries.Models;
 
 namespace School.Api.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class StudentController(IMediator mediator) : ControllerBase
     {
@@ -23,6 +24,13 @@ namespace School.Api.Controllers
         public async Task<IActionResult> GetStudentById(int id)
         {
             var response = await _mediator.Send(new GetStudentByIdQuery(id));
+            return Ok(response);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AddStudent(AddStudentCommand studentCommand)
+        {
+            var response = await _mediator.Send(studentCommand);
             return Ok(response);
         }
         #endregion
