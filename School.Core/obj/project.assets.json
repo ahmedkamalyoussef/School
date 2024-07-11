@@ -987,14 +987,17 @@
           }
         }
       },
-      "School.Data/1.0.0": {
+      "School.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.7"
+        },
         "compile": {
-          "bin/placeholder/School.Data.dll": {}
+          "bin/placeholder/School.Domain.dll": {}
         },
         "runtime": {
-          "bin/placeholder/School.Data.dll": {}
+          "bin/placeholder/School.Domain.dll": {}
         }
       },
       "School.Infrastructure/1.0.0": {
@@ -1003,7 +1006,7 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "8.0.7",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.7",
-          "School.Data": "1.0.0"
+          "School.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/School.Infrastructure.dll": {}
@@ -1016,7 +1019,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
-          "School.Data": "1.0.0",
+          "School.Domain": "1.0.0",
           "School.Infrastructure": "1.0.0"
         },
         "compile": {
@@ -2780,10 +2783,10 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "School.Data/1.0.0": {
+    "School.Domain/1.0.0": {
       "type": "project",
-      "path": "../School.Data/School.Data.csproj",
-      "msbuildProject": "../School.Data/School.Data.csproj"
+      "path": "../School.Data/School.Domain.csproj",
+      "msbuildProject": "../School.Data/School.Domain.csproj"
     },
     "School.Infrastructure/1.0.0": {
       "type": "project",
@@ -2798,7 +2801,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "School.Data >= 1.0.0",
+      "School.Domain >= 1.0.0",
       "School.Infrastructure >= 1.0.0",
       "School.Services >= 1.0.0"
     ]
@@ -2836,8 +2839,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Visual studio\\School\\School.Data\\School.Data.csproj": {
-              "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Data.csproj"
+            "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj": {
+              "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj"
             },
             "D:\\Visual studio\\School\\School.Infrastructure\\School.Infrastructure.csproj": {
               "projectPath": "D:\\Visual studio\\School\\School.Infrastructure\\School.Infrastructure.csproj"

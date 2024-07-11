@@ -1,0 +1,5 @@
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Domain.AssemblyInfoInputs.cache
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Domain.AssemblyInfo.cs
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Domain.csproj.CoreCompileInputs.cache
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Domain.sourcelink.json

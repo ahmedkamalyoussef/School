@@ -33,8 +33,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual studio\\School\\School.Data\\School.Data.csproj": {
-                "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Data.csproj"
+              "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj": {
+                "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj"
               },
               "D:\\Visual studio\\School\\School.Infrastructure\\School.Infrastructure.csproj": {
                 "projectPath": "D:\\Visual studio\\School\\School.Infrastructure\\School.Infrastructure.csproj"
@@ -74,12 +74,12 @@
         }
       }
     },
-    "D:\\Visual studio\\School\\School.Data\\School.Data.csproj": {
+    "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual studio\\School\\School.Data\\School.Data.csproj",
-        "projectName": "School.Data",
-        "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Data.csproj",
+        "projectUniqueName": "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj",
+        "projectName": "School.Domain",
+        "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj",
         "packagesPath": "C:\\Users\\ahmed\\.nuget\\packages\\",
         "outputPath": "D:\\Visual studio\\School\\School.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -114,6 +114,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -163,8 +169,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual studio\\School\\School.Data\\School.Data.csproj": {
-                "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Data.csproj"
+              "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj": {
+                "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj"
               }
             }
           }
@@ -180,6 +186,12 @@
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.7, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
               "target": "Package",
               "version": "[8.0.7, )"
             },
@@ -243,8 +255,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "D:\\Visual studio\\School\\School.Data\\School.Data.csproj": {
-                "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Data.csproj"
+              "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj": {
+                "projectPath": "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj"
               },
               "D:\\Visual studio\\School\\School.Infrastructure\\School.Infrastructure.csproj": {
                 "projectPath": "D:\\Visual studio\\School\\School.Infrastructure\\School.Infrastructure.csproj"

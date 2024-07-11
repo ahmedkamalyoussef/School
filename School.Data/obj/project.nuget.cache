@@ -1,8 +1,20 @@
 {
   "version": 2,
-  "dgSpecHash": "HKMy1MGqMAIoZbnPYZSbiDIEBizB5rlHRL2pFqnvLXwMir0K9re24MvjAc8oDggd2W1FO47jmQvoefo1iIFCMQ==",
+  "dgSpecHash": "2Jo8D0F4nuLFeofj2rw+eR3WVEF9q373eylwQyizx35yurM73RW9m7IBC3urP/aJfxu2npX5lKVq95mKlXD+Pw==",
   "success": true,
-  "projectFilePath": "D:\\Visual studio\\School\\School.Data\\School.Data.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Visual studio\\School\\School.Data\\School.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.7\\microsoft.entityframeworkcore.8.0.7.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.7\\microsoft.entityframeworkcore.abstractions.8.0.7.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\8.0.7\\microsoft.entityframeworkcore.analyzers.8.0.7.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
