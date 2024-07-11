@@ -1,0 +1,12 @@
+D:\Visual studio\School\School.Data\bin\Debug\net8.0\School.Data.deps.json
+D:\Visual studio\School\School.Data\bin\Debug\net8.0\School.Data.dll
+D:\Visual studio\School\School.Data\bin\Debug\net8.0\School.Data.pdb
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Data.AssemblyInfoInputs.cache
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Data.AssemblyInfo.cs
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Data.csproj.CoreCompileInputs.cache
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Data.sourcelink.json
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Data.dll
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\refint\School.Data.dll
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\School.Data.pdb
+D:\Visual studio\School\School.Data\obj\Debug\net8.0\ref\School.Data.dll

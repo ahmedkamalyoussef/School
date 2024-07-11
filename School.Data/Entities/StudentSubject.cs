@@ -8,11 +8,11 @@ namespace School.Data.Entities
         [Key]
         public int StudSubID { get; set; }
         public int StudID { get; set; }
-        public int SubID { get; set; }
 
         [ForeignKey("StudID")]
         public Student Student { get; set; }
 
+        public int SubID { get; set; }
         [ForeignKey("SubID")]
         public Subject Subject { get; set; }
 
