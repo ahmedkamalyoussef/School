@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using School.Infrastructure.Data;
 using School.Domain.IGenericRepository_IUOW;
 using System.Linq.Expressions;
+using School.Domain.Consts;
 
 namespace School.Infrastructure.GenericRepository_UOW
 {
@@ -15,44 +16,99 @@ namespace School.Infrastructure.GenericRepository_UOW
         #endregion
 
         #region methods
-        public virtual async Task<T> GetByIdAsync(int id)
+
+        public async Task<IEnumerable<T>> GetAllAsync(Expression<Func<T, object>> orderBy = null, string direction = null, List<Expression<Func<T, object>>> includes = null)
         {
-            return await _dbContext.Set<T>().FindAsync(id);
-        }
+            IQueryable<T> query = _dbContext.Set<T>();
 
-
-        public IQueryable<T> GetTableNoTracking(List<Expression<Func<T, object>>> includes = null)
-        {
-            IQueryable<T> query = _dbContext.Set<T>().AsNoTracking().AsQueryable();
-
+            if (orderBy != null)
+            {
+                if (direction == OrderDirection.Ascending)
+                    query = query.OrderBy(orderBy);
+                else
+                    query = query.OrderByDescending(orderBy);
+            }
             if (includes != null)
                 foreach (var include in includes)
                     query = query.Include(include);
 
-            return query;
+            return await query.ToListAsync();
+        }
+
+        public async Task<IEnumerable<T>> GetAllAsNoTrackingAsync(Expression<Func<T, object>> orderBy = null, string direction = null, List<Expression<Func<T, object>>> includes = null)
+        {
+            IQueryable<T> query = _dbContext.Set<T>().AsNoTracking();
+
+            if (orderBy != null)
+            {
+                if (direction == OrderDirection.Ascending)
+                    query = query.OrderBy(orderBy);
+                else
+                    query = query.OrderByDescending(orderBy);
+            }
+            if (includes != null)
+                foreach (var include in includes)
+                    query = query.Include(include);
+
+            return await query.ToListAsync();
+        }
+
+        public async Task<T> FindFirstAsync(Expression<Func<T, bool>> expression, List<Expression<Func<T, object>>> includes = null)
+        {
+            IQueryable<T> query = _dbContext.Set<T>().Where(expression);
+
+            if (includes != null)
+            {
+                foreach (var include in includes)
+                {
+                    query = query.Include(include);
+                }
+            }
+
+            return await query.FirstOrDefaultAsync();
         }
 
 
-        public virtual async Task AddRangeAsync(ICollection<T> entities)
+
+        public async Task<IEnumerable<T>> FindAsNoTrackingAsync(Expression<Func<T, bool>> expression, Expression<Func<T, object>>? orderBy = null, string direction = null, List<Expression<Func<T, object>>> includes = null)
+        {
+            IQueryable<T> query = _dbContext.Set<T>().Where(expression).AsNoTracking();
+
+            if (orderBy != null)
+            {
+                if (direction == OrderDirection.Descending)
+                    query = query.OrderBy(orderBy);
+                else
+                    query = query.OrderByDescending(orderBy);
+            }
+            if (includes != null)
+                foreach (var include in includes)
+                    query = query.Include(include);
+
+            return await query.ToListAsync();
+        }
+
+
+        public async Task AddRangeAsync(ICollection<T> entities)
         {
             await _dbContext.Set<T>().AddRangeAsync(entities);
         }
-        public virtual async Task<T> AddAsync(T entity)
+        public async Task<T> AddAsync(T entity)
         {
             await _dbContext.Set<T>().AddAsync(entity);
             return entity;
         }
 
-        public virtual async Task UpdateAsync(T entity)
+        public async Task UpdateAsync(T entity)
         {
             _dbContext.Set<T>().Update(entity);
         }
 
-        public virtual async Task DeleteAsync(T entity)
+        public async Task DeleteAsync(T entity)
         {
             _dbContext.Set<T>().Remove(entity);
         }
-        public virtual async Task DeleteRangeAsync(ICollection<T> entities)
+        public async Task DeleteRangeAsync(ICollection<T> entities)
         {
             foreach (var entity in entities)
             {
@@ -83,17 +139,25 @@ namespace School.Infrastructure.GenericRepository_UOW
 
         }
 
-        public IQueryable<T> GetTableAsTracking(List<Expression<Func<T, object>>> includes = null)
+        public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> expression, Expression<Func<T, object>>? orderBy = null, string direction = null, List<Expression<Func<T, object>>> includes = null)
         {
-            IQueryable<T> query = _dbContext.Set<T>().AsQueryable();
+            IQueryable<T> query = _dbContext.Set<T>().Where(expression);
+
+            if (orderBy != null)
+            {
+                if (direction == OrderDirection.Descending)
+                    query = query.OrderBy(orderBy);
+                else
+                    query = query.OrderByDescending(orderBy);
+            }
             if (includes != null)
                 foreach (var include in includes)
                     query = query.Include(include);
 
-            return query;
+            return await query.ToListAsync();
         }
 
-        public virtual async Task UpdateRangeAsync(ICollection<T> entities)
+        public async Task UpdateRangeAsync(ICollection<T> entities)
         {
             _dbContext.Set<T>().UpdateRange(entities);
             await _dbContext.SaveChangesAsync();

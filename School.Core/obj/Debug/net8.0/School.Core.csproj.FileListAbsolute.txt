@@ -1,3 +1,9 @@
+D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.csproj.AssemblyReference.cache
+D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.AssemblyInfoInputs.cache
+D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.AssemblyInfo.cs
+D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.csproj.CoreCompileInputs.cache
+D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.sourcelink.json
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Core.deps.json
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Core.dll
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Core.pdb
@@ -7,12 +13,6 @@ D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Services.dll
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Domain.pdb
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Infrastructure.pdb
 D:\Visual studio\School\School.Core\bin\Debug\net8.0\School.Services.pdb
-D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.csproj.AssemblyReference.cache
-D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.GeneratedMSBuildEditorConfig.editorconfig
-D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.AssemblyInfoInputs.cache
-D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.AssemblyInfo.cs
-D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.csproj.CoreCompileInputs.cache
-D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.sourcelink.json
 D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.csproj.CopyComplete
 D:\Visual studio\School\School.Core\obj\Debug\net8.0\School.Core.dll
 D:\Visual studio\School\School.Core\obj\Debug\net8.0\refint\School.Core.dll

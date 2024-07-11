@@ -1,3 +1,10 @@
+D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.csproj.AssemblyReference.cache
+D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.GeneratedMSBuildEditorConfig.editorconfig
+D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.AssemblyInfoInputs.cache
+D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.AssemblyInfo.cs
+D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.csproj.CoreCompileInputs.cache
+D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.MvcApplicationPartsAssemblyInfo.cache
+D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.sourcelink.json
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\appsettings.Development.json
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\appsettings.json
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Api.exe
@@ -5,6 +12,7 @@ D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Api.deps.json
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Api.runtimeconfig.json
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Api.dll
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Api.pdb
+D:\Visual studio\School\School.Api\bin\Debug\net8.0\AutoMapper.dll
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\Azure.Core.dll
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\Azure.Identity.dll
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\Humanizer.dll
@@ -124,14 +132,6 @@ D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Core.pdb
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Domain.pdb
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Infrastructure.pdb
 D:\Visual studio\School\School.Api\bin\Debug\net8.0\School.Services.pdb
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.csproj.AssemblyReference.cache
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.GeneratedMSBuildEditorConfig.editorconfig
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.AssemblyInfoInputs.cache
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.AssemblyInfo.cs
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.csproj.CoreCompileInputs.cache
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.MvcApplicationPartsAssemblyInfo.cs
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.MvcApplicationPartsAssemblyInfo.cache
-D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.sourcelink.json
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\staticwebassets.build.json
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\staticwebassets.development.json
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\staticwebassets\msbuild.School.Api.Microsoft.AspNetCore.StaticWebAssets.props
@@ -146,4 +146,3 @@ D:\Visual studio\School\School.Api\obj\Debug\net8.0\refint\School.Api.dll
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.pdb
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.genruntimeconfig.cache
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\ref\School.Api.dll
-D:\Visual studio\School\School.Api\bin\Debug\net8.0\AutoMapper.dll
