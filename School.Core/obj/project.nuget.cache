@@ -1,11 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "oM8wrPRbBZwCzdWs7aLm/LtGrZrR6RTb7w2OZIf/t1pHWISCmNzW1Dj+WWhPbeA1k2zPYk626LqWjecbc3ip8A==",
+  "dgSpecHash": "FhwDcFPlDbYwHC6oDMJmkwsdKjZ4h11EBcsF1WHhJ9t+0FAKpoYnqNN1s6l3cpb0DrzuJvww2nQWtyXBcvUx5A==",
   "success": true,
   "projectFilePath": "D:\\Visual studio\\School\\School.Core\\School.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",
