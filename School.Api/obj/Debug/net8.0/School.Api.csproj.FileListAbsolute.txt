@@ -147,3 +147,5 @@ D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.pdb
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.genruntimeconfig.cache
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\ref\School.Api.dll
 D:\Visual studio\School\School.Api\obj\Debug\net8.0\School.Api.MvcApplicationPartsAssemblyInfo.cs
+D:\Visual studio\School\School.Api\bin\Debug\net8.0\FluentValidation.dll
+D:\Visual studio\School\School.Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll

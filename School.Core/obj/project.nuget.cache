@@ -1,12 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hSBdcr4RpVdj8Bc6aTFc9w+U5vkXL9h7tBUg2NNX/gJUuiFcFxa0XmhnQ0KHAyKWZ8C4pMz0IfcnRSKbJRYz2Q==",
+  "dgSpecHash": "qL5/kl7DxgSq0e1e7Rja/J0PqLKwdrmo863SmlkOoBW0N/ZMdStDFRfMe4DpQEvE5BGpvfmLWOvclbrfh7JamA==",
   "success": true,
   "projectFilePath": "D:\\Visual studio\\School\\School.Core\\School.Core.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahmed\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\fluentvalidation\\11.9.2\\fluentvalidation.11.9.2.nupkg.sha512",
+    "C:\\Users\\ahmed\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.9.2\\fluentvalidation.dependencyinjectionextensions.11.9.2.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\mediatr\\12.3.0\\mediatr.12.3.0.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\ahmed\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",

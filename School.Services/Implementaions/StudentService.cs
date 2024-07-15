@@ -10,7 +10,7 @@ namespace School.Services.Implementaions
         #region fields
         private readonly IUnitOfWork _unitOfWork = unitOfWork;
 
-        
+
         #endregion
         #region methods
         public async Task<Student> GetStudentByIdAsync(int id)
@@ -20,7 +20,7 @@ namespace School.Services.Implementaions
 
         public async Task<List<Student>> GetStudentsAsync()
         {
-            var result = await _unitOfWork.Students.GetAllAsNoTrackingAsync(includes: [s=>s.Department]);
+            var result = await _unitOfWork.Students.GetAllAsNoTrackingAsync(includes: [s => s.Department]);
             return result.ToList();
         }
         public async Task<ErrorType> AddStudentAsync(Student student)
@@ -30,6 +30,10 @@ namespace School.Services.Implementaions
                 return ErrorType.AlreadyExist;
             await _unitOfWork.Students.AddAsync(student);
             return await _unitOfWork.SaveChangesAsync() > 0 ? ErrorType.Success : ErrorType.Failed;
+        }
+        public async Task<bool> IsExist(string name, int? id = null)
+        {
+            return await _unitOfWork.Students.IsExsist(s => s.Name == name);
         }
         #endregion
     }

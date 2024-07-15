@@ -1,9 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore.Storage;
-using Microsoft.EntityFrameworkCore;
-using School.Infrastructure.Data;
-using School.Domain.IGenericRepository_IUOW;
-using System.Linq.Expressions;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using School.Domain.Consts;
+using School.Domain.IGenericRepository_IUOW;
+using School.Infrastructure.Data;
+using System.Linq.Expressions;
 
 namespace School.Infrastructure.GenericRepository_UOW
 {
@@ -116,27 +116,23 @@ namespace School.Infrastructure.GenericRepository_UOW
             }
         }
 
-        
+
 
 
 
         public IDbContextTransaction BeginTransaction()
         {
-
-
             return _dbContext.Database.BeginTransaction();
         }
 
         public void Commit()
         {
             _dbContext.Database.CommitTransaction();
-
         }
 
         public void RollBack()
         {
             _dbContext.Database.RollbackTransaction();
-
         }
 
         public async Task<IEnumerable<T>> FindAsync(Expression<Func<T, bool>> expression, Expression<Func<T, object>>? orderBy = null, string direction = null, List<Expression<Func<T, object>>> includes = null)
@@ -160,7 +156,11 @@ namespace School.Infrastructure.GenericRepository_UOW
         public async Task UpdateRangeAsync(ICollection<T> entities)
         {
             _dbContext.Set<T>().UpdateRange(entities);
-            await _dbContext.SaveChangesAsync();
+        }
+
+        public async Task<bool> IsExsist(Expression<Func<T, bool>> expression)
+        {
+            return await _dbContext.Set<T>().FirstOrDefaultAsync(expression) != null;
         }
         #endregion
     }

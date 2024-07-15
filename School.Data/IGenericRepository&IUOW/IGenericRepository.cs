@@ -19,5 +19,6 @@ namespace School.Domain.IGenericRepository_IUOW
         Task UpdateAsync(T entity);
         Task UpdateRangeAsync(ICollection<T> entities);
         Task DeleteAsync(T entity);
+        Task<bool> IsExsist(Expression<Func<T, bool>> expression);
     }
 }

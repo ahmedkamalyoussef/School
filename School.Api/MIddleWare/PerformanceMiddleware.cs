@@ -1,16 +1,12 @@
 ﻿using System.Diagnostics;
 
-namespace School.Api
+namespace School.Api.MIddleWare
 {
-    public class PerformanceMiddleware
+    public class PerformanceMiddleware(ILogger<PerformanceMiddleware> logger, RequestDelegate next)
     {
-        private readonly ILogger<PerformanceMiddleware> _logger;
-        private readonly RequestDelegate _next;
-        public PerformanceMiddleware(ILogger<PerformanceMiddleware> logger, RequestDelegate next)
-        {
-            _logger = logger;
-            _next = next;
-        }
+        private readonly ILogger<PerformanceMiddleware> _logger = logger;
+        private readonly RequestDelegate _next = next;
+
         public async Task InvokeAsync(HttpContext context)
         {
             const int performanceTimeLog = 500;

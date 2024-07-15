@@ -1,4 +1,4 @@
-using School.Api;
+using School.Api.MIddleWare;
 using School.Core;
 using School.Services.Extentions;
 var builder = WebApplication.CreateBuilder(args);
@@ -21,7 +21,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseMiddleware<ErrorHandlerMiddleware>();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

@@ -1,5 +1,4 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using School.Api.BaseResponse;
 using School.Core.Features.Students.Commands.Models;
 using School.Core.Features.Students.Queries.Models;
@@ -26,7 +25,6 @@ namespace School.Api.Controllers
         [HttpPost]
         public async Task<IActionResult> AddStudent(AddStudentCommand studentCommand)
         {
-             
             return NewResult(await _mediator.Send(studentCommand));
         }
         #endregion
