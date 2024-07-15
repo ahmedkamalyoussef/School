@@ -8,16 +8,28 @@ using School.Services.Abstracts;
 
 namespace School.Core.Features.Students.Commands.Hnadlers
 {
-    public class StudentCommandHandler(IStudentService studentService,IMapper mapper) : ResponseHandler, IRequestHandler<AddStudentCommand, Response<string>>
+    public class StudentCommandHandler(IStudentService studentService, IMapper mapper) : ResponseHandler
+        , IRequestHandler<AddStudentCommand, Response<string>>
+        , IRequestHandler<EditStudentCommand, Response<string>>
     {
         private readonly IMapper _mapper = mapper;
-        private readonly IStudentService _studentService =studentService;
+        private readonly IStudentService _studentService = studentService;
         public async Task<Response<string>> Handle(AddStudentCommand request, CancellationToken cancellationToken)
         {
-            var student =_mapper.Map<Student>(request);
+            var student = _mapper.Map<Student>(request);
             var result = await _studentService.AddStudentAsync(student);
             if (result == ErrorType.Success) return Created("added successfuly");
             else if (result == ErrorType.AlreadyExist) return UnprocessableEntity<string>();
+            return BadRequest<string>();
+        }
+
+        public async Task<Response<string>> Handle(EditStudentCommand request, CancellationToken cancellationToken)
+        {
+            var student = await _studentService.GetStudentByIdAsync(request.StudID);
+            if (student == null) return NotFound<string>();
+
+            _mapper.Map(request, student);
+            if (await _studentService.EditAsync(student)) return Success("edited successfuly");
             return BadRequest<string>();
         }
     }

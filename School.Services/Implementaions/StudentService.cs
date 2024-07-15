@@ -33,7 +33,15 @@ namespace School.Services.Implementaions
         }
         public async Task<bool> IsExist(string name, int? id = null)
         {
+            if (id != null)
+                return await _unitOfWork.Students.IsExsist(s => s.Name == name && s.StudID != id);
             return await _unitOfWork.Students.IsExsist(s => s.Name == name);
+        }
+
+        public async Task<bool> EditAsync(Student student)
+        {
+            await _unitOfWork.Students.UpdateAsync(student);
+            return await _unitOfWork.SaveChangesAsync() > 0;
         }
         #endregion
     }

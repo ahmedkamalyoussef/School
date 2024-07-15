@@ -10,5 +10,10 @@ namespace School.Core.Mapping.StudentMap
             CreateMap<AddStudentCommand, Student>()
                    .ForMember(dest => dest.DID, opt => opt.MapFrom(src => src.DepartmentId));
         }
+        public void EditStudent()
+        {
+            CreateMap<EditStudentCommand, Student>()
+                   .ForMember(dest => dest.DID, opt => opt.MapFrom(src => src.DepartmentId));
+        }
     }
 }

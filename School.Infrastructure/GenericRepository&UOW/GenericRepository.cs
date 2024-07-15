@@ -101,7 +101,8 @@ namespace School.Infrastructure.GenericRepository_UOW
 
         public async Task UpdateAsync(T entity)
         {
-            _dbContext.Set<T>().Update(entity);
+            _dbContext.Attach(entity);
+            _dbContext.Entry<T>(entity).State = EntityState.Modified;
         }
 
         public async Task DeleteAsync(T entity)
