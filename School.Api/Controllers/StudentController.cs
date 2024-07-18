@@ -33,6 +33,11 @@ namespace School.Api.Controllers
         {
             return NewResult(await _mediator.Send(studentCommand));
         }
+        [HttpDelete]
+        public async Task<IActionResult> EditStudent(int id)
+        {
+            return NewResult(await _mediator.Send(new DeleteStudentCommand(id)));
+        }
         #endregion
     }
 }

@@ -10,6 +10,7 @@ namespace School.Services.Abstracts
         Task<bool> IsExist(string name, int? id = null);
         Task<ErrorType> AddStudentAsync(Student student);
         Task<bool> EditAsync(Student student);
+        Task<ErrorType> DeleteAsync(int id);
 
     }
 }

@@ -43,6 +43,14 @@ namespace School.Services.Implementaions
             await _unitOfWork.Students.UpdateAsync(student);
             return await _unitOfWork.SaveChangesAsync() > 0;
         }
+
+        public async Task<ErrorType> DeleteAsync(int id)
+        {
+            var student = await _unitOfWork.Students.FindFirstAsync(s => s.StudID == id);
+            if (student == null) return ErrorType.NotFound;
+            await _unitOfWork.Students.DeleteAsync(student);
+            return await _unitOfWork.SaveChangesAsync() > 0 ? ErrorType.Success : ErrorType.Failed;
+        }
         #endregion
     }
 }

@@ -4,6 +4,7 @@
     {
         AlreadyExist,
         Failed,
-        Success
+        Success,
+        NotFound
     }
 }
