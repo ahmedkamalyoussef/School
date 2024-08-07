@@ -39,7 +39,7 @@ namespace School.Core.Features.Students.Commands.Hnadlers
             ErrorType result = await _studentService.DeleteAsync(request.Id);
             if (result == ErrorType.Success) return Deleted<string>();
             if (result == ErrorType.NotFound) return NotFound<string>();
-            return BadRequest<string>("failed to delete"); o
+            return BadRequest<string>("failed to delete");
         }
     }
 }
