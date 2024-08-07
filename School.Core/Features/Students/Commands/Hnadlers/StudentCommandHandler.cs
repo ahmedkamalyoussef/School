@@ -24,7 +24,6 @@ namespace School.Core.Features.Students.Commands.Hnadlers
             else if (result == ErrorType.AlreadyExist) return UnprocessableEntity<string>();
             return BadRequest<string>();
         }
-
         public async Task<Response<string>> Handle(EditStudentCommand request, CancellationToken cancellationToken)
         {
             var student = await _studentService.GetStudentByIdAsync(request.StudID);
@@ -40,7 +39,7 @@ namespace School.Core.Features.Students.Commands.Hnadlers
             ErrorType result = await _studentService.DeleteAsync(request.Id);
             if (result == ErrorType.Success) return Deleted<string>();
             if (result == ErrorType.NotFound) return NotFound<string>();
-            return BadRequest<string>("failed to delete");
+            return BadRequest<string>("failed to delete"); o
         }
     }
 }
