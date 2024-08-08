@@ -2,7 +2,6 @@
 using Microsoft.AspNetCore.Mvc;
 using School.Core.Bases;
 using System.Net;
-
 namespace School.Api.BaseResponse
 {
     [Route("api/[controller]")]
@@ -11,8 +10,6 @@ namespace School.Api.BaseResponse
     {
         private IMediator _mediatorInstance;
         protected IMediator _mediator => _mediatorInstance ??= HttpContext.RequestServices.GetService<IMediator>();
-
-
         #region Actions
         public ObjectResult NewResult<T>(Response<T> response)
         {
